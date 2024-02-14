@@ -8,7 +8,6 @@
     <h1>Thymeleaf課題</h1>
     <h2>入力画面</h2>
     <p>値を入力してください。</p>
-    <!-- ここに前回の入力内容を表示する、条件分岐とクエリパラメータを使う？ -->
     <p th:if="${param.previous} ne null" th:text="'前回入力された値は' + ${param.previous} + 'でした。'">th:if</p>
 
     <form method="post" action="/output">
